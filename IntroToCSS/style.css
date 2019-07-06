@@ -4,19 +4,39 @@ body {
     background-size: cover;
 }
 
+html body div.container h1#foo {
+    color:red
+}
+[id="foo"] {
+    color: cyan
+}
+
 .container {
   /*background:linear-gradient(to right, #4d79ff,#e6ecff  );
     box-shadow: 3px 3px 5px black:*/
 }
+.container h1 {
+    color: red;
+}
+h1 { 
+    color: green ! important;
+}
 
-h1 {
+h1, h2, h3 {
     color:#ffffff;
     text-shadow: 2px 2px 5px black;
-}
-h2 {
-    color: rgb(0,204,255);
-    text-shadow: 1px 1px 3px darkblue;
+    line-height: 1ren;
+    font-family: sans-serif;
 }
 .borderimg {
     border: 5px dashed red;
+}
+
+ul li {
+    color:white;
+    font-size: 20px;
+}
+
+ul > li {
+    color: yellow;
 }

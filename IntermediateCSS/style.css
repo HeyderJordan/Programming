@@ -1,0 +1,49 @@
+html {
+    font-family:"Times New Roman", serif, sans-serif;
+    
+}
+
+
+body {
+/*    background-image: url(minimal-zebra-background-3.jpg);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+    background-color: #444;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color:#ffffff;
+    line-height: 1ren;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 30px;
+    font-style: normal;
+}
+
+.formatting {
+    font-size: 25px;
+    line-height: 2rem;
+    color:white;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    word-spacing: 10px;
+    text-transform: uppercase;
+}
+.bordering {
+    border: 5px dashed red;
+}
+
+ul li {
+    color:white;
+    font-size: 20px;
+}
+
+ul > li {
+    color: yellow;
+}
