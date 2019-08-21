@@ -115,13 +115,125 @@
 //    console.log(student[x]);
 //}
 
+//-------------------------------------------------
+
+//function area(length, width){
+//    return length * width;
+//}
+//
+//var rectanglesAreas = []
+//rectanglesAreas.push(area(10,15))
+//rectanglesAreas.push(area(14,12))
+//rectanglesAreas.push(area(16,16))
+//rectanglesAreas.push(area(2,15))
+//
+//console.log(rectanglesAreas)
+//
+//var bankBalance = 500;
+//
+//function makeTransaction(priceOfSale){
+//    if (priceOfSale <= bankBalance) {
+//        bankBalance -= priceOfSale;
+//        console.log("Purchase Successful");
+//    } else {
+//        console.log("Insufficient Funds");
+//    }
+//    
+//}
+//console.log(bankBalance);
+//makeTransaction(79.00);
+//console.log(bankBalance);
+//makeTransaction(2.32);
+//console.log(bankBalance);
+//makeTransaction(10.45);
+//console.log(bankBalance)
+//makeTransaction(409)
+//console.log(bankBalance)
+//
+//var Transaction(priceOfSale){
+//    if (priceOfSale <= bankBalance) {
+//        bankBalance -= priceOfSale;
+//        console.log("Purchase Successful");
+//    } else {
+//        console.log("Insufficient Funds");
+//    }
+//    
+//}
+//
+//var printCustomerName = function(first,last) {
+//    console.log("First Name: " + first + " Last Name: " last);
+//}
+//
+//var applyForCreditCard = function(creditScore, soul) {
+//    //call some functions
+//}
+//
+//var bankOperations= [];
+//bankOperations.push(Transaction)
+//bankOperations.push(printCustomerName)
+//bankOperations.push(applyForCreditCard)
+
+//Objects----------------------------------------
+
+var students = [];
+
+function student(first, last, age){
+    this.firstName=first;
+    this.lastName= last;
+    this.age = age;
+    this.greeting = function() {
+        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+}
+};
+
+students.push(new student("Jenny","Laga",5));
+students.push(new student("Jenny","Corn",7));
+students.push(new student("Jenny","Beef",3));
+
+var student = students[0];
+
+for (var key in student) {
+    console.log(student[key]);
+}
 
 
+//var s1 = new student("Jenny","Laga",5);    
+//console.log(s1);
+//console.log(s1.greeting());
+    
+//var student0 = {
+//    firstName: "John",
+//    lastName: "Parker",
+//    age: 7,
+//    greeting: function() {
+//        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+//    }
+//};
+//console.log(student0.greeting())
+//
+////Creates a new empty object
+//var student1 = new Object();
+//student1.firstName = "John";
+//student1.lastnName = "Parker";
+//student1.age = 7;
+//
+//var student2 = {}
+//student2.firstName = "Zack";
+//student2.lastName = "Bobo";
+//student2.age = 5
 
 
+//students.push(student0)
+//students.push(student1)
+//students.push(student2)
+//
+for (var index=0; index < students.length; index++){
+ var student = students[index];
+    console.log(student.greeting())
+}
 
-
-
+//console.log(student.firstName)
+//console.log(student.lastName)
 
 
 
