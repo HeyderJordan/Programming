@@ -174,27 +174,27 @@
 //bankOperations.push(applyForCreditCard)
 
 //Objects----------------------------------------
-
-var students = [];
-
-function student(first, last, age){
-    this.firstName=first;
-    this.lastName= last;
-    this.age = age;
-    this.greeting = function() {
-        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
-}
-};
-
-students.push(new student("Jenny","Laga",5));
-students.push(new student("Jenny","Corn",7));
-students.push(new student("Jenny","Beef",3));
-
-var student = students[0];
-
-for (var key in student) {
-    console.log(student[key]);
-}
+//
+//var students = [];
+//
+//function student(first, last, age){
+//    this.firstName=first;
+//    this.lastName= last;
+//    this.age = age;
+//    this.greeting = function() {
+//        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+//}
+//};
+//
+//students.push(new student("Jenny","Laga",5));
+//students.push(new student("Jenny","Corn",7));
+//students.push(new student("Jenny","Beef",3));
+//
+//var student = students[0];
+//
+//for (var key in student) {
+//    console.log(student[key]);
+//}
 
 
 //var s1 = new student("Jenny","Laga",5);    
@@ -227,13 +227,52 @@ for (var key in student) {
 //students.push(student1)
 //students.push(student2)
 //
-for (var index=0; index < students.length; index++){
- var student = students[index];
-    console.log(student.greeting())
-}
+//for (var index=0; index < students.length; index++){
+// var student = students[index];
+//    console.log(student.greeting())
+//}
 
 //console.log(student.firstName)
 //console.log(student.lastName)
+
+
+//------------------binding
+
+
+this.car = "Honda Civic";
+
+var marksGarage = {
+    car : "Aston Martin",
+    getCar: function() {
+        return this.car;
+        
+    }
+};
+
+console.log(marksGarage.getCar());
+
+var storeGetCarForLater = marksGarage.getCar;
+
+console.log(storeGetCarForLater());
+
+var theRealGetCarFucntion = storeGetCarForLater.bind(marksGarage)
+
+console.log(theRealGetCarFucntion());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
